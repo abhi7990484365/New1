@@ -101,9 +101,9 @@ def execute_drop_operations(client):
         print("\n")
 
 try:
-    client = client.Client('wss://<YOUR_ENDPOINT>.gremlin.cosmosdb.azure.com:443/','g', 
-        username="/dbs/<YOUR_DATABASE>/colls/<YOUR_COLLECTION_OR_GRAPH>", 
-        password="<YOUR_PASSWORD>",
+    client = client.Client('https://localhost:8901','g', 
+        username="/dbs/Employee/colls/Employee", 
+        password="C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
         message_serializer=serializer.GraphSONSerializersV2d0()
     )
     
